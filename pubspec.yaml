@@ -1,7 +1,7 @@
 name: languagetool_textfield
-description: The LanguageTool TextField package is a spell-checker designed for Flutter apps. This is useful for apps that need text input like messaging, notes, and email.
-version: 0.0.5
-homepage: https://github.com/solid-software/languagetool_textfield/
+description: This is a fork of languagetool_textfield widget. All major work was done by Solid Software Team, and LanguageTool Team. I merely need to adapt this work to my use case but do not claim authorship.
+version: 0.0.1
+homepage: https://github.com/fedorSulitskiy/languagetool_textformfield
 
 
 environment:

@@ -11,7 +11,8 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages).
 -->
 
-# LanguageTool TextField
+# LanguageTool TextField FORK
+## MOST OF THE STUFF HERE IS UNRELATED TO THIS VERSION
 
 Providing powerful spell-checking and grammar correction capabilities.
 
