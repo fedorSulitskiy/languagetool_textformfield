@@ -32,6 +32,13 @@ class LanguageToolTextField extends StatefulWidget {
   /// ```language``` = 'auto' by default.
   final String language;
 
+  // Fedor's amendments
+  final Color? cursorColor;
+  final int? maxLength;
+  final double? cursorHeight;
+  final TextAlignVertical? textAlignVertical;
+  final double padding;
+
   /// Creates a widget that checks grammar errors.
   const LanguageToolTextField({
     required this.controller,
@@ -42,6 +49,11 @@ class LanguageToolTextField extends StatefulWidget {
     this.maxLines = 1,
     this.minLines,
     this.expands = false,
+    this.cursorColor,
+    this.maxLength,
+    this.cursorHeight,
+    this.textAlignVertical,
+    this.padding = 0.0,
     super.key,
   });
 
@@ -50,7 +62,6 @@ class LanguageToolTextField extends StatefulWidget {
 }
 
 class _LanguageToolTextFieldState extends State<LanguageToolTextField> {
-  static const _padding = 24.0;
 
   final _focusNode = FocusNode();
   final _scrollController = ScrollController();
@@ -89,9 +100,9 @@ class _LanguageToolTextFieldState extends State<LanguageToolTextField> {
         );
 
         return Padding(
-          padding: const EdgeInsets.all(_padding),
+          padding: EdgeInsets.all(widget.padding),
           child: Center(
-            child: TextField(
+            child: TextFormField(
               focusNode: _focusNode,
               controller: widget.controller,
               scrollController: _scrollController,
@@ -100,6 +111,10 @@ class _LanguageToolTextFieldState extends State<LanguageToolTextField> {
               maxLines: widget.maxLines,
               expands: widget.expands,
               style: widget.style,
+              cursorColor: widget.cursorColor,
+              maxLength: widget.maxLength,
+              cursorHeight: widget.cursorHeight,
+              textAlignVertical: widget.textAlignVertical,
             ),
           ),
         );
