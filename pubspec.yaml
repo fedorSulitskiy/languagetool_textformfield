@@ -1,4 +1,4 @@
-name: languagetool_textformfield
+name: languagetool_textfield
 description: This is a fork of languagetool_textfield widget. All major work was done by Solid Software Team, and LanguageTool Team. I merely need to adapt this work to my use case but do not claim authorship.
 version: 0.0.1
 homepage: https://github.com/fedorSulitskiy/languagetool_textformfield
