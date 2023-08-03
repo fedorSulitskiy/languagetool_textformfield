@@ -102,7 +102,7 @@ class _LanguageToolTextFieldState extends State<LanguageToolTextField> {
         return Padding(
           padding: EdgeInsets.all(widget.padding),
           child: Center(
-            child: TextFormField(
+            child: TextField(
               focusNode: _focusNode,
               controller: widget.controller,
               scrollController: _scrollController,
