@@ -38,6 +38,7 @@ class LanguageToolTextField extends StatefulWidget {
   final double? cursorHeight;
   final TextAlignVertical? textAlignVertical;
   final double padding;
+  final Function(String)? onChanged;
 
   /// Creates a widget that checks grammar errors.
   const LanguageToolTextField({
@@ -54,6 +55,7 @@ class LanguageToolTextField extends StatefulWidget {
     this.cursorHeight,
     this.textAlignVertical,
     this.padding = 0.0,
+    this.onChanged,
     super.key,
   });
 
@@ -115,6 +117,7 @@ class _LanguageToolTextFieldState extends State<LanguageToolTextField> {
               maxLength: widget.maxLength,
               cursorHeight: widget.cursorHeight,
               textAlignVertical: widget.textAlignVertical,
+              onChanged: widget.onChanged,
             ),
           ),
         );
